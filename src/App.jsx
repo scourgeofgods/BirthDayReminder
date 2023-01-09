@@ -1,6 +1,5 @@
 import { useState } from "react";
 import data from "./data";
-import people from "./data";
 
 function App() {
   const [people, setPeople] = useState(data);
@@ -28,7 +27,7 @@ function App() {
           </button>
         ) : (
           <button className=" card-btn" onClick={() => setPeople(data)}>
-            Bring
+            Get Back
           </button>
         )}
       </section>
